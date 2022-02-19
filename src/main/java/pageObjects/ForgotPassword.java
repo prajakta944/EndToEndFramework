@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 public class ForgotPassword {
 
 	public WebDriver driver;
-	By usernamefp = By.id("user_email");
-	By instruc = By.name("commit");
+	private By usernamefp = By.id("user_email");
+	private By instruc = By.name("commit");
 
 	public ForgotPassword(WebDriver driver) {
 		this.driver = driver;

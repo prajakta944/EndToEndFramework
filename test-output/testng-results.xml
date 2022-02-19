@@ -1,59 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-19T08:37:20Z" name="Default suite" finished-at="2022-02-19T08:38:12Z" duration-ms="51476">
+  <suite started-at="2022-02-19T10:38:50Z" name="Default suite" finished-at="2022-02-19T10:39:00Z" duration-ms="10037">
     <groups>
     </groups>
-    <test started-at="2022-02-19T08:37:20Z" name="Default test" finished-at="2022-02-19T08:38:12Z" duration-ms="51476">
-      <class name="ParentGroup.EndToEndProject.HomePage">
-        <test-method signature="SandboxHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ParentGroup.EndToEndProject.HomePage@54709809]" started-at="2022-02-19T14:07:20Z" name="SandboxHomePage" data-provider="getdata" finished-at="2022-02-19T14:07:50Z" duration-ms="29502" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[surve.prajakta915@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PrajAnkur@210690]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restricted User]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-02-19T10:38:50Z" name="Default test" finished-at="2022-02-19T10:39:00Z" duration-ms="10037">
+      <class name="ParentGroup.EndToEndProject.ValidateHeaderBar">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:ParentGroup.EndToEndProject.ValidateHeaderBar@6063d80a]" started-at="2022-02-19T16:08:50Z" name="initialize" finished-at="2022-02-19T16:09:00Z" duration-ms="9821" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SandboxHomePage -->
-        <test-method signature="SandboxHomePage(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ParentGroup.EndToEndProject.HomePage@54709809]" started-at="2022-02-19T14:07:50Z" name="SandboxHomePage" data-provider="getdata" finished-at="2022-02-19T14:08:11Z" duration-ms="21655" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rahulshettyacademy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[learning]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[UnRestricted User]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- initialize -->
+        <test-method signature="ValidateHomepageTitle()[pri:0, instance:ParentGroup.EndToEndProject.ValidateHeaderBar@6063d80a]" started-at="2022-02-19T16:09:00Z" name="ValidateHomepageTitle" finished-at="2022-02-19T16:09:00Z" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SandboxHomePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ParentGroup.EndToEndProject.HomePage@54709809]" started-at="2022-02-19T14:08:11Z" name="teardown" finished-at="2022-02-19T14:08:12Z" duration-ms="291" status="PASS">
+        </test-method> <!-- ValidateHomepageTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ParentGroup.EndToEndProject.ValidateHeaderBar@6063d80a]" started-at="2022-02-19T16:09:00Z" name="teardown" finished-at="2022-02-19T16:09:00Z" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- ParentGroup.EndToEndProject.HomePage -->
+      </class> <!-- ParentGroup.EndToEndProject.ValidateHeaderBar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

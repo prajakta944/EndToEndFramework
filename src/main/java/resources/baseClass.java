@@ -28,25 +28,28 @@ public class baseClass {
 	public WebDriver initializeDriver() throws IOException {
 		log.info("asdaffafsasf");
 		p = new Properties();
+
 		FileInputStream fis = new FileInputStream(
-				"D:\\MyWork\\JavaPractice\\EndToEndProject\\src\\main\\java\\resources\\data.properties");
+				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
+//		FileInputStream fis = new FileInputStream("D:\\MyWork\\JavaPractice\\EndToEndProject\\src\\main\\java\\resources\\data.properties");
 
 		p.load(fis);
-		String browserName = p.getProperty("browser");
+		String browserName = System.getProperty("browser");
+//		String browserName = p.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"D:\\MyWork\\JavaPractice\\EndToEndProject\\BrowserDrivers\\chromedriver.exe");
+					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
-					"D:\\MyWork\\JavaPractice\\EndToEndProject\\BrowserDrivers\\geckodriver.exe");
+					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equals("edge")) {
 			System.setProperty("webdriver.edge.driver",
-					"D:\\MyWork\\JavaPractice\\EndToEndProject\\BrowserDrivers\\msedgedriver.exe");
+					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\msedgedriver.exe");
 			driver = new EdgeDriver();
 
 		}

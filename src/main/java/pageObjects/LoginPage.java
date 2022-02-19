@@ -7,10 +7,10 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
 
 	public WebDriver driver;
-	By username = By.id("user_email");
-	By password = By.id("user_password");
-	By login = By.name("commit");
-	By forgotpass = By.cssSelector("a[class='link-below-button']");
+	private By username = By.id("user_email");
+	private By password = By.id("user_password");
+	private By login = By.name("commit");
+	private By forgotpass = By.cssSelector("a[class='link-below-button']");
 //	By username = By.id("username");
 //	By password = By.id("password");
 //	By login = By.name("login");
