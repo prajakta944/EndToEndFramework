@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="ParentGroup.EndToEndProject.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Homepagetest(failed)">
+    <classes>
+      <class name="ParentGroup.EndToEndProject.ValidateHeaderBar">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ParentGroup.EndToEndProject.ValidateHeaderBar -->
+      <class name="ParentGroup.EndToEndProject.ValidateTitle">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- ParentGroup.EndToEndProject.ValidateTitle -->
+      <class name="ParentGroup.EndToEndProject.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="SandboxHomePage" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- ParentGroup.EndToEndProject.HomePage -->
+    </classes>
+  </test> <!-- Homepagetest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 234.315 s <<< FAILURE! - in TestSuite
+ParentGroup.EndToEndProject.HomePage.SandboxHomePage[surve.prajakta915@gmail.com, PrajAnkur@210690, Restricted User](1)  Time elapsed: 3.093 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="https://rahulshettyacademy.com/sign_in/">...</a> is not clickable at point (992, 16). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'INDLT-35JV373', ip: '192.168.139.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecf01e28a178dee1569fa643d3852ace, clickElement {id=3be8bcae-5b45-4b05-917b-e281af47463d}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\survep\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:55795}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55795/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ecf01e28a178dee1569fa643d3852ace)] -> xpath: //*[@id="homepage"]/header/div[1]/div/nav/ul/li[4]/a]
+Session ID: ecf01e28a178dee1569fa643d3852ace
+	at ParentGroup.EndToEndProject.HomePage.SandboxHomePage(HomePage.java:31)
+
+ParentGroup.EndToEndProject.HomePage.SandboxHomePage[rahulshettyacademy, learning, UnRestricted User](2)  Time elapsed: 69.625 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="https://rahulshettyacademy.com/sign_in/">...</a> is not clickable at point (992, 16). Other element would receive the click: <div class="listbuilder-popup-content">...</div>
+  (Session info: chrome=98.0.4758.102)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'INDLT-35JV373', ip: '192.168.139.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83b76a396920b549f1eda44f662af1b8, clickElement {id=f22584ff-c5ec-473b-be29-8fb50d62114a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\survep\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56752}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56752/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (83b76a396920b549f1eda44f662af1b8)] -> xpath: //*[@id="homepage"]/header/div[1]/div/nav/ul/li[4]/a]
+Session ID: 83b76a396920b549f1eda44f662af1b8
+	at ParentGroup.EndToEndProject.HomePage.SandboxHomePage(HomePage.java:31)
+

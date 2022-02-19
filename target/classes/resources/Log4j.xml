@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="basePath">./</Property>
+	</Properties>
+
+	<Appenders>
+
+		<RollingFile name="file" fileName="D:\\MyWork\\JavaPractice\\EndToEndProject\\print.log"
+			filePattern="target/rolling1/print.log.%i.log.zip">
+			<PatternLayout>
+				<pattern>%d %p %c{1.} [%t] %m%n</pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="1000" />
+		</RollingFile>
+
+
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="file" />
+			<!-- <AppenderRef ref="file" /> -->
+		</Root>
+	</Loggers>
+</Configuration>
