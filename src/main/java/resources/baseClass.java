@@ -16,6 +16,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -34,13 +35,18 @@ public class baseClass {
 //		FileInputStream fis = new FileInputStream("D:\\MyWork\\JavaPractice\\EndToEndProject\\src\\main\\java\\resources\\data.properties");
 
 		p.load(fis);
-		String browserName = System.getProperty("browser");
-//		String browserName = p.getProperty("browser");
+//		String browserName = System.getProperty("browser");
+		String browserName = p.getProperty("browser");
 
-		if (browserName.equals("chrome")) {
+		if (browserName.contains("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe");
-			driver = new ChromeDriver();
+			ChromeOptions op = new ChromeOptions();
+
+			if (browserName.contains("headless")) {
+				op.addArguments("headless");
+			}
+			driver = new ChromeDriver(op);
 
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
